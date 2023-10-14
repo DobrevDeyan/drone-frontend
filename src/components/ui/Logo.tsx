@@ -1,7 +1,7 @@
 export const Logo: React.FC = () => {
   return (
     <>
-      <h1>MEGA.DRONES</h1>
+      <h1>MEGA.DRONES 2</h1>
     </>
   )
 }
