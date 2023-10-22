@@ -1,25 +1,95 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@400;500;700&display=swap");
+
+/* layout */
 
 #root {
   height: 100vh;
   width: 100vw;
-  background: url(assets/wave-haikei-3.svg);
+  /* background: url(assets/wave-haikei-3.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  background-image: linear-gradient(45deg, #868f96 0%, #596164 100%);
+  user-select: none;
 }
 
-#content-wrapper {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-  /* font-family: "Inter Var", sans-serif; */
+.view {
+  min-height: calc(100vh - 292px);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-} */
+/* header  */
+
+h1.company_title {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: black;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  cursor: pointer;
+}
+.char {
+  transform: translateY(-115px);
+  transition: transform 0.5s;
+  background: -webkit-linear-gradient(#0b448e, #333);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.svg-icon {
+  width: 60px;
+}
+
+/* homepage  */
+
+/* footer start */
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#footer > div:last-child > div {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer > div.footer-logo {
+  width: 95px;
+  height: 180px;
+  position: relative;
+  background-color: #4c4b49;
+}
+#footer > div.footer-logo h1 {
+  position: absolute;
+  left: -35px;
+  bottom: 60px;
+  transform: rotate(-90deg);
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2rem;
+  padding: 10px;
+  border: 3px solid white;
+  color: aliceblue;
+}
+
+#footer .grid > div {
+  background: #dad5cf;
+  border: 2px solid #4c4b49;
+}
+.x-logo {
+  width: 32px;
+}
+
+/* footer start end */
