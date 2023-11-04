@@ -1,11 +1,18 @@
-import AnimatedSVGComponent from "@/components/ui/Drone"
-import React from "react"
+// import video from "../../assets/waves.mp4"
+import Login from "./Login"
 
 export const Home = () => {
   return (
-    <div id="homepage-content" className="view">
-      {/* <AnimatedSVGComponent></AnimatedSVGComponent> */}
-      <h1>Homepage</h1>
-    </div>
+    <>
+      {/* <div className="background-video">
+        <video autoPlay muted loop id="background-video">
+          <source src={video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div> */}
+      <div id="homepage_content" className="view">
+        <Login></Login>
+      </div>
+    </>
   )
 }

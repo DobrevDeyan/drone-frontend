@@ -20,7 +20,7 @@ export const Header: React.FC = () => {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Services</NavigationMenuTrigger>
+            <NavigationMenuTrigger>services</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="nav-menu grid w-[400px] gap-3 p-4 md:w-[436px] md:grid-cols-2 bg-black">
                 <li>
@@ -63,7 +63,7 @@ export const Header: React.FC = () => {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Book</NavigationMenuTrigger>
+            <NavigationMenuTrigger>book</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="nav-menu grid w-[400px] gap-3 p-4 md:w-[436px] md:grid-cols-2 bg-black">
                 <li>
@@ -106,7 +106,7 @@ export const Header: React.FC = () => {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Contacts</NavigationMenuTrigger>
+            <NavigationMenuTrigger>contacts</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="nav-menu grid w-[400px] gap-3 p-4 md:w-[436px] md:grid-cols-2 bg-black">
                 <li>
@@ -148,6 +148,7 @@ export const Header: React.FC = () => {
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
+          
           <NavigationMenuItem>
             <Avatar>
               <AvatarImage src="https://github.com/shadcn.png" />
@@ -156,7 +157,7 @@ export const Header: React.FC = () => {
             </Avatar>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Button variant="outline">Log Out</Button>
+            <Button variant="outline">log out</Button>
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
